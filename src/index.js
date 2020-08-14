@@ -2,12 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-// import App from "@/router/routes";
 import * as serviceWorker from "./serviceWorker";
+import RouterMap from "./router/routes";
+
+// ReactDOM.render(<RouterMap />, document.getElementById("root"));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App>
+      <RouterMap />
+    </App>
   </React.StrictMode>,
   document.getElementById("root")
 );
